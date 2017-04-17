@@ -1,0 +1,137 @@
+// bower:scss
+// endbower
+
+@import url('https://fonts.googleapis.com/css?family=Chivo:400,700|Rubik+Mono+One');
+
+$primary: #111;
+$alt: #fff;
+$secondary: #444;
+$tertiary: #e26328;
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  background: #fafafa;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #secondary;
+}
+
+.hero-unit {
+  margin: 50px auto 0 auto;
+  width: 300px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  background-color: #eee;
+  border-radius: 6px;
+  padding: 60px;
+  h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  background: $alt;
+}
+
+.nav {
+  background: $primary;
+  position: fixed;
+  height: 100vh;
+  width: 150px;
+  left: 10%;
+  .title-content {
+    background: #fff;
+    margin-top: 100px;
+    padding-bottom: 8px;
+    h1 {
+      direction: rtl;
+      color: $primary;
+      font-family: 'Rubik Mono One', sans-serif;
+      font-size: 20pt;
+      text-align: right;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      // color: #e20425;
+      color: $secondary;
+      font-family: 'Chivo', sans-serif;
+      // text-align: right;
+    }
+  }
+  ul {
+    margin-top: 30px;
+    background: #fff;
+    padding: 3px 0;
+    li {
+      position: relative;
+      list-style: none;
+      margin: 10px 0;
+      a {
+        display: block;
+        color: $primary;
+        font-family: 'Chivo', sans-serif;
+        font-weight: 700;
+        position: relative;
+        text-align: right;
+        text-decoration: none;
+        width: 100%;
+        &:hover:after {
+          background: $primary;
+          content: "";
+          position: absolute;
+          right: -10px;
+          top: 0;
+          width: 3px;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+.content {
+  width: 60%;
+  float: left;
+  margin-left: calc(10% + 200px);
+  margin-top: 60px;
+  // background: #2ad;
+  h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 150px;
+    line-height: 0;
+  }
+  p {
+    padding-left: 10px;
+    position: relative;
+    max-width: 500px;
+    line-height: 15pt;
+    // background: #f23;
+    &:after {
+      background: $primary;
+      content: "";
+      position: absolute;
+      left: -3px;
+      top: 0;
+      width: 3px;
+      height: 100%;
+    }
+  }
+  a {
+    color: $tertiary;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
