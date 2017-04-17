@@ -1,6 +1,7 @@
 // bower:scss
 // endbower
 
+@import "project";
 @import url('https://fonts.googleapis.com/css?family=Chivo:400,700|Rubik+Mono+One');
 
 $primary: #111;
@@ -17,8 +18,9 @@ $tertiary: #e26328;
 
 body {
   background: #fafafa;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  // font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #secondary;
+  font-family: 'Chivo', sans-serif;
 }
 
 .hero-unit {
@@ -127,7 +129,7 @@ html {
       height: 100%;
     }
   }
-  a {
+  p a {
     color: $tertiary;
     text-decoration: none;
     &:hover {
