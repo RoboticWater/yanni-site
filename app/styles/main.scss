@@ -103,7 +103,7 @@ html {
   }
 }
 .content {
-  width: 60%;
+  width: 550px;
   float: left;
   margin-left: calc(10% + 230px);
   margin-top: 60px;
@@ -136,4 +136,33 @@ html {
       text-decoration: underline;
     }
   }
+}
+
+.news {
+  width: 200px;
+  position: fixed;
+  display: block;
+  top: 175px;
+  bottom: 240px;
+  margin-left: calc(10% + 780px);
+    // border-left: 4px solid $primary;
+  h1 {
+    text-align: right;
+  }
+  .feed {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    border-left: 4px solid $primary;
+  }
+}
+.feed::-webkit-scrollbar-track {
+  background: #eee;
+}
+.feed::-webkit-scrollbar-thumb
+{
+  background-color: $primary;
+}
+.feed::-webkit-scrollbar {
+    width: 1em;
 }
