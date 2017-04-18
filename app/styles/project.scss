@@ -3,53 +3,22 @@ $alt: #fff;
 $secondary: #444;
 $tertiary: #e26328;
 
-.content.extend {
-    margin-bottom: 100px;
+.main-img {
+    width: 100%;
+    border-bottom: solid 4px $primary;
 }
-
-.content > .title {
-    line-height: 27pt;
-    font-size: 30pt;
-    font-family: 'Rubik Mono One', sans-serif;
-    border-bottom: solid 4px;
-    display: inline-block;
-    margin-bottom: 8px;
-}
-.project {
+.content .single-project {
     float: left;
     margin-bottom: 15px;
     margin-right: 15px;
-    width: calc(50% - 15px);
-    max-width: 240px;
-    &:first-child {
-        width: 100%;
-        max-width: 500px;
-    }
-    img {
-        width: 100%;
-        border-bottom: solid 4px $primary;
-    }
-    .description {
-        width: 100%;
-        .title {
-            margin-bottom: -1px;
-            font-weight: 700;
-        }
-        .date {
-            font-size: 9pt;
-        }
-        .text {
-            font-size: 11pt;
-        }
-    }
-}
-.contact {
-    h2 {
-        margin-bottom: 0px;
-        margin-top: 20px;
-        line-height: 10px;
-    }
-    span {
-        line-height: 20pt;
+    width: 100%;
+    max-width: 500px;
+    .title {
+        line-height: 27pt;
+        font-size: 30pt;
+        font-family: 'Rubik Mono One', sans-serif;
+        border-bottom: solid 4px;
+        display: inline-block;
+        margin-bottom: 8px;
     }
 }

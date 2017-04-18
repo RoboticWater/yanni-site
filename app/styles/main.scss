@@ -1,6 +1,7 @@
 // bower:scss
 // endbower
 
+@import "projects";
 @import "project";
 @import url('https://fonts.googleapis.com/css?family=Chivo:400,700|Rubik+Mono+One');
 
@@ -103,7 +104,7 @@ html {
   }
 }
 .content {
-  width: 550px;
+  // width: 550px;
   float: left;
   margin-left: calc(10% + 230px);
   margin-top: 60px;
